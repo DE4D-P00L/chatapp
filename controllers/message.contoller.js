@@ -19,6 +19,9 @@ export const sendMessage = async (req, res) => {
       });
     }
 
+    if (message.trim() === "")
+      return res.status(400).json({ error: "Please enter a message" });
+
     const newMessage = await Message.create({
       senderId,
       receiverId,
