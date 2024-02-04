@@ -7,6 +7,7 @@ const verifyJWT = async (req, res, next) => {
     const token =
       (authorizationHeader && authorizationHeader.split(" ")[1]) ||
       req.cookies.jwt;
+    console.log(authorizationHeader);
     if (!token)
       return res
         .status(401)
