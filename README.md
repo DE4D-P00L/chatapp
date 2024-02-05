@@ -20,13 +20,14 @@ Data persistence using MongoDB and Mongoose
 ## Setup
 
 1. Clone this repository
-2. Install dependencies: npm install
+2. Install dependencies: `npm install`
 3. Create a .env file and add the following environment variables:
-4. MONGODB_URI: Your MongoDB connection URI
-5. JWT_SECRET: A secret string for JWT signing
-6. PORT: The port to connect to
-7. NODE_DEV: Set it to development or production
-8. Start the server: npm start
+4. MONGODB_URI: `Your MongoDB connection URI`
+5. JWT_SECRET: `A secret string for JWT signing`
+6. PORT: `The port to connect to`
+7. NODE_DEV: Set it to `development` or `production`
+8. Start the server: `npm start`
+9. FRONTEND_URL=`http://localhost:5173`
 
 ## API Endpoints
 
