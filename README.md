@@ -7,7 +7,6 @@ Secure user authentication with JWT
 User registration and login
 Password encryption using bcryptjs
 Data persistence using MongoDB and Mongoose
-Clear and concise documentation
 
 ## Technologies Used
 
@@ -17,7 +16,6 @@ Clear and concise documentation
 - Mongoose
 - bcryptjs
 - jsonwebtoken
-- cookie-parser
 
 ## Setup
 
@@ -34,7 +32,7 @@ Clear and concise documentation
 
 - /api/auth/signup (POST): Register a new user
 - /api/auth/login (POST): Login a user and obtain a JWT
-- /api/auth/logout (POST): Logout and clear cookies
+- /api/auth/logout (POST): Logout and clear jwt
 - /api/users/ (GET): Access all users (requires authentication)
 - /api/messages/send/:receiverId (POST): Send a message (requires authentication)
 - /api/messages/:receiverId (POST): Get all messages (requires authentication)
@@ -43,10 +41,6 @@ Clear and concise documentation
 
 Register a new user or login with an existing account.
 Send and receive messages in real-time with other connected users.
-
-## Contributing
-
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
 ## Additional Notes
 
