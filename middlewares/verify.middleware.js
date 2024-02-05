@@ -6,7 +6,6 @@ const verifyJWT = async (req, res, next) => {
     const authorizationHeader =
       req.headers.authorization || req.headers["Authorization"];
     const token = authorizationHeader && authorizationHeader.split(" ")[1];
-    console.log(token);
     if (!token)
       return res
         .status(401)
