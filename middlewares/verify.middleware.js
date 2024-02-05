@@ -3,7 +3,8 @@ import User from "../models/user.model.js";
 
 const verifyJWT = async (req, res, next) => {
   try {
-    const authorizationHeader = req.headers.authorization;
+    const authorizationHeader =
+      req.headers.authorization || req.headers["Authorization"];
     const token = authorizationHeader && authorizationHeader.split(" ")[1];
     console.log(token, authorizationHeader, req.headers);
     if (!token)
