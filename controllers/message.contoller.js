@@ -21,7 +21,7 @@ export const sendMessage = async (req, res) => {
       });
     }
 
-    if (message?.message?.trim() === "")
+    if (message.message.trim() === "")
       return res.status(400).json({ error: "Please enter a message" });
 
     const newMessage = new Message({
