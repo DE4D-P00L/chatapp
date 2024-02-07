@@ -15,7 +15,7 @@ app.use(cookieParser());
 app.use(
   cors({
     credentials: true,
-    origin: "https://chat-app-r2oe.onrender.com",
+    origin: process.env.FRONTEND_URL,
   })
 );
 
